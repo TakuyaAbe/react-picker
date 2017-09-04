@@ -221,7 +221,7 @@ class Picker extends Component {
         }
     }
     _onShow() {
-        setTimeout(function(){ this.state.closeable = true }.bind(this), 250)
+        setTimeout(function(){ this.state.closeable = true }.bind(this), 100)
         this.setState({ open: true })
         this.props.onShow && this.props.onShow()
     }
@@ -283,7 +283,7 @@ class Picker extends Component {
                 value: value
             })
             this.props.onChange(op.value, op.text, idx)
-        }, 250)
+        }, 100)
     }
 
     _clickOnOption(e) {
