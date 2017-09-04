@@ -169,6 +169,7 @@ class Picker extends Component {
                                               data-value={JSON.stringify(op)}
                                               component="li"
                                               onTap={this._clickOnOption}
+                                              className={this.state.value === op.value ? "is-active" : ""}
                                     >
                                         {op.text}
                                     </Tappable>
